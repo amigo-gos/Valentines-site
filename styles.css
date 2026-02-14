@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffc0cb;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+#main-heart {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    -webkit-mask-image: radial-gradient(circle at center, black 50%, transparent 50%);
+    -webkit-mask-size: cover;
+    webkit-mask-repeat:no-repeat;
+    cursor: pointer;
+    animation: heartbeat 1.5s ease-in-out infinite;
+    position absolute linear flow="horizontal-valid"
+}
